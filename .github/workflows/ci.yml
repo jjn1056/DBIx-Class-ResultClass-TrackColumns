@@ -36,7 +36,7 @@ jobs:
     - name: Install Modules
       run: |
         dzil authordeps --missing | cpanm --notest
-        #dzil listdeps --missing | cpanm --notest
+        dzil listdeps --missing | cpanm --notest
 
     - name: Run tests
       run: |
